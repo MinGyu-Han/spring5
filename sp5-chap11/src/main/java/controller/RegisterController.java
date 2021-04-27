@@ -53,4 +53,13 @@ public class RegisterController {
 		}
 	}
 	
+	@GetMapping("/register/step3")
+	public String handleStep3Get() {
+		return "redirect:/register/step1";
+	}
+	
+	@RequestMapping("/main")
+	public String main() {
+		return "main";
+	}
 }
